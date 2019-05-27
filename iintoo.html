@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./iintoo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+
+    <main class="main">
+        <section class="authorization">
+            <h1 class="title"> Get iintoo in Today </h1>
+            <p class="paragraph"> There is no charge or obligation upon registration.</p>
+            <div class="social buttons">
+                <button class="fb-btn btn" id="fb-btn" data-url="https://fb.com"><i class="fab fa-facebook-f p-r-20"></i>Register with Facebook</button>
+                <button class="linkedin-btn btn" id="ln-btn" data-url="https://linkedin.com"><i class="fab fa-linkedin-in p-r-20"></i>Register with LinkedIn</button>
+            </div>
+            <div class="or"><span> OR </span></div>
+
+            <form action="profile.html" name="form" method="POST" id="myform">
+                <div class="contact-info">
+                    <label for="email">
+                        <input type="email" id="email" name="email" value="">
+                        <div class="input-title">Email</div>
+                    </label>
+                    <label for="phone">
+                        <input type="tel" id="phone" value="" name="phone">
+                        <div class="input-title">Phone</div>
+                    </label>
+                </div>  
+                
+                <p class="what-type">What type of investor are you?</p>
+                <fieldset class="investor-types">
+                        <legend class="description">Select the type of Investor you are below.</legend>
+                        <ul class="container">
+                            <li>
+                              <label for="ind-investor">
+                                <input type="radio" id="ind-investor" name="investor_type" value="individual" checked data-text="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.">Individual
+                              </label>
+                            </li>
+                            <li>
+                              <label for="bus-investor">
+                                <input type="radio" id="bus-investor" name="investor_type" value="business" data-text="Business text.">Business
+                              </label>
+                            </li>
+                            <li>
+                                <label for="ira-investor">
+                                  <input type="radio" id="ira-investor" name="investor_type" value="ira" data-text="Random Ira text.">IRA
+                                </label>
+                              </li>
+                              <li>
+                                <label for="trust-investor">
+                                  <input type="radio" id="trust-investor" name="investor_type" value="trust" data-text="Trust text">Trust                          
+                                </label>
+                              </li>
+                        </ul>
+                    </fieldset>
+                    <div class="investor-type-description">
+                            <p>I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.</p>
+                        </div>
+                        <div class="agree container-flex">
+                            <input type="checkbox" name="checkbox" value="check" id="agree" required/> I agree to the terms and receiving notifications from iintoo
+                            <a href="#">View full terms</a>
+                        </div>
+                        <input type="submit" name="submitBtn" value="Create Account"/>  
+                         <a href="./autzation.html"> <input type="submit" name="submitBtn" value="Authorization"></a>
+            </form>
+        </section>
+    </main>
+    <script src="iintoo.js"></script>
+    
+</body>
+</html>
